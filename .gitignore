@@ -1,0 +1,8 @@
+/vendor/*
+/tools/*
+.php-cs-fixer.cache
+.phpunit.result.cache
+
+
+# Misc
+.local

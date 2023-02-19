@@ -1,0 +1,37 @@
+{
+  "name": "easbarba/aba",
+  "description": "Like postman/insomnia, but cli.",
+  "type": "library",
+  "license": "GPL-3.0-or-later",
+  "version": "0.1.0",
+  "autoload": {
+    "psr-4": {
+      "Easbarba\\Aba\\": "src/"
+    }
+  },
+  "bin": ["bin/aba"],
+  "authors": [
+    {
+      "name": "easbarba",
+      "email": "easbarba@outlook.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.2"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.5",
+    "pestphp/pest": "^1.22",
+    "friendsofphp/php-cs-fixer": "^3.14"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "scripts": {
+    "check-style": "PHP_CS_FIXER_IGNORE_ENV=true php-cs-fixer fix --diff --verbose --dry-run .",
+    "fix-style": "PHP_CS_FIXER_IGNORE_ENV=true php-cs-fixer fix ."
+  }
+}
